@@ -53,7 +53,7 @@ app.get('/search/:search', function(req, res){
         });
 });
 
-app.get('/recentImages', function(req, res){
+app.get('/recentSearches', function(req, res){
     userSearch.find({},  function(err, searches){
         if(err) throw err;
         
